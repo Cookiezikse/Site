@@ -1,0 +1,390 @@
+:root{
+  --main-back: #5f8f4e;
+  --main-list: #5f8d4e;
+  --sec-list: #1b0f0f;
+  --main-list-content: #a4be7b;
+  --sec-list-content: #648983;
+  --main-title: #e5d9b6;
+  --oran: rgb(255, 153, 0);
+  --purp: rgb(99, 0, 165);
+  --sec-dark: rgb(46, 0, 77);
+  --light: rgb(255, 255, 255);
+  --grey: rgb(171, 171, 171);
+  --drak: rgb(0,0,0);
+  --progr: rgba(168, 168 ,168);
+  --progr-val: rgb(189,189,189);
+  --prog-val-back: rgb(22,17,17);
+  --aqua: aquamarine;
+  --btn: #4d4d4d;
+
+
+}
+
+body {
+  background: var(--main-back);
+}
+
+.category ul{
+  display: flex;
+  background: var(--main-list);
+  background: -webkit-linear-gradient(0deg, var(--main-list) 0%, var(--sec-list));
+  background: linear-gradient(0deg, var(--main-list) 0%, var(--sec-list));
+  padding-bottom: 0.5rem;
+  border-radius: 0 0 1rem 1rem;
+}
+
+.category ul li{
+  margin-left: 1rem;
+  font-weight: bold;
+  font-size: 1.8rem;
+  transition: all ease 200ms;
+  color: var(--main-list-content);
+}
+
+.category ul li:hover{
+  color: var(--sec-list-content);
+  cursor: pointer;
+  background-color: var(--light);
+  padding: 1rem;
+  padding-top: 0.5rem;
+  border-radius: 1rem;
+  transition: all ease 200ms;
+}
+
+.category1 ul{
+  display: flex;
+  background: var(--main-list);
+  background: -webkit-linear-gradient(0deg, var(--main-list) 0%, var(--sec-list));
+  background: linear-gradient(0deg, var(--main-list) 0%, var(--sec-list));
+  padding-bottom: 0.5rem;
+  border-radius: 0 0 1rem 1rem;
+}
+
+.category1 ul li{
+  margin-left: 1rem;
+  font-weight: bold;
+  font-size: 1.8rem;
+  transition: all ease 200ms;
+  color: var(--main-list-content);
+}
+
+.category1 ul li:hover{
+  color: var(--sec-list-content);
+  cursor: pointer;
+  background-color: var(--light);
+  padding: 1rem;
+  padding-top: 0.5rem;
+  border-radius: 1rem;
+  transition: all ease 200ms;
+}
+
+
+.SearchBar {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 5vw;
+  width: 90vw;
+  height: 2rem;
+  border-width: 5px;
+  border-radius: 10px;
+  background-color: var(--grey);
+  transition: all ease 200ms;
+  color: var(--light);
+}
+
+.SearchBar:hover {
+  border-color: var(--sec-list-content);
+  transition: all ease 200ms;
+}
+
+.ShowPopTitle {
+  Color: var(--main-title);
+  padding-bottom: 0.5rem;
+  border-radius: 1rem 1rem 0 0; 
+  display: flex;
+}
+
+.ShowPopTitle h2{
+  font-size: xx-large;
+  font-weight: bold;
+  margin-left: 2rem;
+  text-decoration: underline;
+}
+
+.List {
+  width: 100vw;
+  display: flex;
+  font-weight: bold;
+  overflow-x: auto;
+  scrollbar-width: auto;
+  transition: 0s;
+  
+}
+
+.List2 {
+  width: 100vw;
+  display: flex;
+  font-weight: bold;
+}
+
+.List li{
+  text-align: center;
+  margin-left: 1rem;
+  transition: all ease 200ms;
+  margin-bottom: 1rem;
+}
+
+.List2 li {
+  text-align: center;
+  margin-left: 1rem;
+  transition: all ease 200ms;
+  margin-bottom: 1rem;
+}
+
+.List li a {
+  margin-bottom: 2rem;
+  background-color: var(--sec-dark);
+  border-radius: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.1rem;
+  padding-bottom: 0.2rem;
+  transition: all ease 0.4s;
+}
+
+.List2 li a {
+  margin-bottom: 2rem;
+  background-color: var(--sec-dark);
+  border-radius: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.1rem;
+  padding-bottom: 0.2rem;
+  transition: all ease 0.4s;
+}
+
+.List li:hover a{
+  background-color: var(--grey);
+  color: var(--dark);
+  transition: all ease 0.8s;
+}
+
+.List2 li:hover a{
+  background-color: var(--grey);
+  color: var(--dark);
+  transition: all ease 0.8s;
+}
+
+.List li .PosterSize {
+  width: 15rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.List2 li .PosterSize {
+  width: 15rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.List li:hover{
+  background-color: var(--light);
+  transition: all ease 200ms;
+  color: var(--main-color);
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-radius: 1rem;
+  border-color: var(--main-color-sec);
+  border-width: 1rem;
+  padding-bottom: 1rem;
+}
+
+.List2 li:hover{
+  background-color: var(--light);
+  transition: all ease 200ms;
+  color: var(--main-color);
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-radius: 1rem;
+  border-color: var(--main-color-sec);
+  border-width: 1rem;
+  padding-bottom: 1rem;
+}
+
+.List li .Overview{
+  display: none;
+}
+
+.List2 li .Overview{
+  display: none;
+}
+
+.List li:hover .Overview{
+  display: block;
+}
+
+.List2 li:hover .Overview{
+  display: block;
+}
+
+.List li:hover div p{
+  width: max-content;
+  max-width: 20vw;
+  margin-left: 2rem;
+  margin-top: 1rem;
+  color: var(--main-list-content);
+  font-weight: bold;
+}
+
+.List2 li:hover div p{
+  width: max-content;
+  max-width: 20vw;
+  margin-left: 2rem;
+  margin-top: 1rem;
+  color: var(--main-list-content);
+  font-weight: bold;
+}
+
+.List li div {
+  display: grid;
+  grid-auto-flow: column;
+  grid-row: 2;
+  transition: all 200ms;
+
+}
+
+.List2 li div {
+  display: grid;
+  grid-auto-flow: column;
+  grid-row: 2;
+  transition: all 200ms;
+
+}
+
+.List li:hover h2{
+  color: var(--main-list-content)
+}
+
+.List2 li:hover h2{
+  color: var(--main-list-content)
+}
+
+.MoviePopTitle {
+  Color: var(--main-title);
+  margin-top: 2rem;
+  padding-bottom: 0.5rem;
+  border-radius: 1rem 1rem 0 0; 
+  display: flex;
+}
+
+.MoviePopTitle h2{
+  font-size: xx-large;
+  font-weight: bold;
+  margin-left: 2rem;
+  text-decoration: underline;
+}
+
+.ShowPopTitle {
+  Color: var(--main-title);
+  margin-top: 2rem;
+  padding-bottom: 0.5rem;
+  border-radius: 1rem 1rem 0 0; 
+  display: flex;
+}
+
+.ShowPopTitle h2{
+  font-size: xx-large;
+  font-weight: bold;
+  margin-left: 2rem;
+  text-decoration: underline;
+}
+
+.back {
+  background: radial-gradient(at bottom right, #e5d9b6 0, #e5d9b6 21.25px, rgba(229,217,182,0.2) 21.25px, rgba(229,217,182,0.2) 42.5px, rgba(229,217,182,0.75) 42.5px, rgba(229,217,182,0.75) 63.75px, rgba(229,217,182,0.25) 63.75px, rgba(229,217,182,0.25) 85px, rgba(229,217,182,0.3) 85px, rgba(229,217,182,0.3) 106.25px, rgba(229,217,182,0.75) 106.25px, rgba(229,217,182,0.75) 127.5px, rgba(229,217,182,0.2) 127.5px, rgba(229,217,182,0.2) 148.75px, transparent 148.75px, transparent 170px), radial-gradient(at top left, transparent 0, transparent 21.25px, rgba(229,217,182,0.2) 21.25px, rgba(229,217,182,0.2) 42.5px, rgba(229,217,182,0.75) 42.5px, rgba(229,217,182,0.75) 63.75px, rgba(229,217,182,0.3) 63.75px, rgba(229,217,182,0.3) 85px, rgba(229,217,182,0.25) 85px, rgba(229,217,182,0.25) 106.25px, rgba(229,217,182,0.75) 106.25px, rgba(229,217,182,0.75) 127.5px, rgba(229,217,182,0.2) 127.5px, rgba(229,217,182,0.2) 148.75px, #e5d9b6 148.75px, #e5d9b6 170px, transparent 170px, transparent 425px);
+  background-blend-mode: multiply;
+  background-size: 170px 170px, 170px 170px;
+  background-color: var(--main-list-content);
+  border-radius: 50px;
+}
+
+.progress {
+  background-color: var(--progr);
+  justify-content: flex-start;
+  border-radius: 10px;
+  align-items: center;
+  position: relative;
+  padding: 0 5px;
+  display: flex;
+  height: 30px;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.progress-value {
+  animation: load 3s normal forwards;
+  box-shadow: 0 10px 40px -10px var(--progr-val);
+  border-radius: 10px;
+  background: var(--prog-val-back);
+  height: 30px;
+  width: 0;
+}
+
+@keyframes load {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+.Percent {
+  display:flex;
+  justify-content:space-between;
+}
+.Percent h2{
+  color: var(--aqua);
+}
+
+.btn-shine {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 12px 48px;
+  color: #ffffff;
+  background: linear-gradient(to right, var(--btn) 0, white 10%, var(--btn) 20%);
+  background-position: 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s infinite linear;
+  animation-fill-mode: forwards;
+  -webkit-text-size-adjust: none;
+  font-weight: 600;
+  font-size: 20px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+@keyframes shine {
+  0%{
+    background-position: 0;
+  }
+  60%{
+    background-position: 180px;
+  }
+  100%{
+    background-position: 180px;
+  }
+}
+
+.off {
+  display: none;
+}
+
+Link {
+  color: #5f8f4e;
+}
+.Camoufle {
+  padding-bottom: 100000px;
+}
+
+.List2 {
+  overflow-y: scroll;
+}
